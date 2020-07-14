@@ -13,33 +13,33 @@ let floorCost = Math.floor(nissan) + Math.floor(tesla) + Math.floor(chevrolet);
 
 let roundCost = Math.round(sum / 100) * 100;
 
-console.log("Максимальне значення: " + maxValue);
-
-console.log("Мінімальне значення: " + minValue);
-
-console.log("Вартість всіх товарів: " + sum);
-
-console.log("Округлена вартість товарів: " + floorCost);
-
-console.log("Округлення товарів до сотен: " + roundCost);
-
+let isEven;
 if (sum % 2 == 0) {
-  console.log(true);
+  isEven = true;
 } else {
-  console.log(false);
+  isEven = false;
 }
 
 let rest = 500 - sum;
-console.log("Решта: " + rest);
 
 let mean = sum.toFixed(2) / 3;
-console.log("Середнє значення: " + mean);
 
 let discont = Math.floor(Math.random() * 10);
 
-console.log("Знижка : " + discont);
+let sumWithDiscont = (sum - sum * (discont / 100)).toFixed(2);
 
-let sumWithDiscont = sum - sum * (discont / 100);
-console.log("Сума зі знижкою : " + sumWithDiscont.toFixed(2));
+let profit = sum / 2 - sumWithDiscont;
 
-document.write(sum);
+document.write("Максимальне значення: " + maxValue, "<br>");
+document.write("Мінімальне значення: " + minValue, "<br>");
+document.write("Вартість всіх товарів: " + sum, "<br>");
+document.write("Округлена вартість товарів: " + floorCost, "<br>");
+document.write("Округлення товарів до сотен: " + roundCost, "<br>");
+document.write(
+  "Чи є сума всіх товарів парним або непарним числом?: " + isEven,
+  "<br>"
+);
+document.write("Решта при оплаті всіх товарів купюрою в 500: " + rest, "<br>");
+document.write("Середнє значення цін: " + mean, "<br>");
+document.write("Сума до оплати зі знижкою: " + sumWithDiscont, "<br>");
+document.write("Прибуток: " + profit, "<br>");
