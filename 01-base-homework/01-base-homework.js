@@ -13,14 +13,11 @@ let floorCost = Math.floor(nissan) + Math.floor(tesla) + Math.floor(chevrolet);
 
 let roundCost = Math.round(sum / 100) * 100;
 
-let isEven;
-if (sum % 2 == 0) {
-  isEven = true;
-} else {
-  isEven = false;
-}
+let isEven = sum % 2 == 0;
+console.log(isEven);
 
-let rest = 500 - sum;
+let fiveHundred = 500;
+let rest = fiveHundred - sum;
 
 let mean = sum.toFixed(2) / 3;
 
@@ -28,7 +25,7 @@ let discont = Math.floor(Math.random() * 100);
 
 let sumWithDiscont = (sum - sum * (discont / 100)).toFixed(2);
 
-const profit = (sum / 2 - sumWithDiscont).toFixed(2);
+const profit = (sumWithDiscont / 2 - sum).toFixed(2);
 
 document.write("Максимальне значення: " + maxValue, "<br>");
 document.write("Мінімальне значення: " + minValue, "<br>");
