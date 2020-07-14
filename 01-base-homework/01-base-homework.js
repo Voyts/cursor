@@ -28,7 +28,7 @@ let discont = Math.floor(Math.random() * 100);
 
 let sumWithDiscont = (sum - sum * (discont / 100)).toFixed(2);
 
-let profit = sum / 2 - sumWithDiscont;
+let profit = (sum / 2 - sumWithDiscont).toFixed(2);
 
 document.write("Максимальне значення: " + maxValue, "<br>");
 document.write("Мінімальне значення: " + minValue, "<br>");
