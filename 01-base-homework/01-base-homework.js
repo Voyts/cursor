@@ -1,13 +1,13 @@
 "use strict";
-let nissan = 15.678,
+const nissan = 15.678,
   tesla = 123.965,
   chevrolet = 90.2345;
 
-let sum = nissan + tesla + chevrolet;
+const sum = nissan + tesla + chevrolet;
 
-let maxValue = Math.max(nissan, tesla, chevrolet);
+const maxValue = Math.max(nissan, tesla, chevrolet);
 
-let minValue = Math.min(nissan, tesla, chevrolet);
+const minValue = Math.min(nissan, tesla, chevrolet);
 
 let floorCost = Math.floor(nissan) + Math.floor(tesla) + Math.floor(chevrolet);
 
@@ -28,7 +28,7 @@ let discont = Math.floor(Math.random() * 100);
 
 let sumWithDiscont = (sum - sum * (discont / 100)).toFixed(2);
 
-let profit = (sum / 2 - sumWithDiscont).toFixed(2);
+const profit = (sum / 2 - sumWithDiscont).toFixed(2);
 
 document.write("Максимальне значення: " + maxValue, "<br>");
 document.write("Мінімальне значення: " + minValue, "<br>");
