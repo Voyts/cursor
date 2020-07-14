@@ -24,7 +24,7 @@ let rest = 500 - sum;
 
 let mean = sum.toFixed(2) / 3;
 
-let discont = Math.floor(Math.random() * 10);
+let discont = Math.floor(Math.random() * 100);
 
 let sumWithDiscont = (sum - sum * (discont / 100)).toFixed(2);
 
