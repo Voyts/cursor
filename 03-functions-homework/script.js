@@ -29,6 +29,7 @@ const exponentNumber = (base = 8, exp) => {
 //  Function 3
 function capitalizeFirstLetter(str) {
     if (typeof str == "string") {
+        str = str.toLowerCase();
         return str && str[0].toUpperCase() + str.slice(1);
     } else {
         console.log("Write string, please!");
@@ -86,7 +87,7 @@ const deleteLetters = (letter = 'a', word = "blablabla") => {
     for (let i = 0; i < deleteResult.length; i++) {
         if (deleteResult[i] === letter.toLowerCase()) deleteResult.splice(i, 1)
     };
-    deleteResult = deleteResult.join('')
+    deleteResult = deleteResult.join('');
     return deleteResult;
 }
 
@@ -124,7 +125,7 @@ console.log(getRandomNumber(1, 20));
 console.log(countLetter("а", "Асталавіста"));
 console.log(convertCurrency("100$"));
 console.log(getRandomPass(8));
-console.log(deleteLetters("а", "blablabla"));
+console.log(deleteLetters("a", "blablabla"));
 console.log(isPalindrome("Я несу гусеня"));
 console.log(deleteDuplicateLetter("Бісквіт був дуже ніжним"));
 
