@@ -22,7 +22,7 @@ const getPairs = (students) => {
 const getThemes = (pairs, themes) => {
     let pairThemes = [];
     for (let i = 0; i < pairs.length; i++) {
-        pairThemes[i] = [pairs[i].join(", "), themes[i]];
+        pairThemes[i] = [pairs[i].join(" і "), themes[i]];
     }
     return pairThemes;
 };
