@@ -71,5 +71,3 @@ console.log(scholarshipStudent.getInfo());
 scholarshipStudent.marks = 5;
 console.log('Оцінки студента:', scholarshipStudent.marks);
 console.log('Середній бал:', scholarshipStudent.getAverageMark());
-console.log(scholarshipStudent.recover());
-console.log(scholarshipStudent.getScolarship(1400));
