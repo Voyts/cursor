@@ -14,3 +14,4 @@ function generateBlocksInterval() {
 }
 
 generateBlocks();
+generateBlocksInterval();
