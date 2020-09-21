@@ -72,6 +72,5 @@ const scholarshipStudent = new ScholarshipStudent('NTU', '1', 'Petro Petrov');
 console.log(scholarshipStudent);
 console.log(scholarshipStudent.getInfo());
 scholarshipStudent.marks = 5;
-scholarshipStudent.dismiss();
 console.log('Оцінки студента:', scholarshipStudent.marks);
 console.log('Середній бал:', scholarshipStudent.getAverageMark());
