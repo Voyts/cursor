@@ -14,26 +14,29 @@ class Student {
     get marks() {
         if (!this._dismissed) {
             return this._marks;
-        } else {
-            return null;
         }
+        return null;
     }
 
     set marks(mark) {
-        if (this._dismissed) return null;
-        else this._marks.push(mark);
+        if (this._dismissed) {
+            return null;
+        }
+        return this._marks.push(mark);
     }
+
+
 
     getAverageMark() {
         return this._marks.reduce((a, b) => a + b) / this._marks.length
             .toFixed(2);
     }
     dismiss() {
-        return this._dismissed = false;
+        return this._dismissed = true;
     }
 
     recover() {
-        return this._dismissed = true;
+        return this._dismissed = false;
     }
 }
 const student = new Student('NUFT', '4', 'Ivan Ivanov');
@@ -45,7 +48,7 @@ student.marks = 2;
 console.log('Оцінки:', student._marks);
 console.log('Середній бал:', student.getAverageMark());
 student.dismiss();
-console.log('Відраховано, оцінки:', student._marks);
+console.log('Відраховано, оцінки:', student.marks);
 student.recover();
 console.log('Поновлено, оцінки:', student._marks);
 
@@ -69,5 +72,6 @@ const scholarshipStudent = new ScholarshipStudent('NTU', '1', 'Petro Petrov');
 console.log(scholarshipStudent);
 console.log(scholarshipStudent.getInfo());
 scholarshipStudent.marks = 5;
+scholarshipStudent.dismiss();
 console.log('Оцінки студента:', scholarshipStudent.marks);
 console.log('Середній бал:', scholarshipStudent.getAverageMark());
