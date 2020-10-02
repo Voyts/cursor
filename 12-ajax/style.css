@@ -27,11 +27,8 @@ html {
     margin: 0;
     overflow-x: hidden;
     font-size: 16px;
-    background: url(../img/1.jpg) no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(../img/deathstar.jpg);
+    background-size: 100%;
     font-family: "STARWARS";
     color: #ffef0a;
     font-size: 16px;
@@ -62,8 +59,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(../img/2.jpg) center center no-repeat;
-    background-size: cover;
+    background: url(../img/gate.jpg) center center no-repeat;
+    background-size: 100%;
     text-align: center;
     border-radius: 15px;
     transition: all .9s;
