@@ -1,6 +1,6 @@
 @font-face {
     font-family: "STARWARS";
-    src: url("../fonts/STARWARS.wof");
+    src: url("../fonts/STARWARS.woff");
     font-weight: normal;
     font-style: normal
 }
@@ -16,6 +16,7 @@ input,
 select {
     background-color: #ffef0a;
     color: white;
+    font-family: "STARWARS";
     -webkit-appearance: none;
     appearance: none
 }
@@ -44,6 +45,7 @@ html {
 }
 
 .header_logo {
+    margin-top: 30px;
     text-align: center;
     font-size: 60px;
     font-family: "STARWARS";
@@ -107,6 +109,7 @@ html {
 #get-info,
 #get-planets {
     display: grid;
+    font-family: "STARWARS";
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #ffef0a;
     border: none;
