@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>ajax</title>
+</head>
+
+<div class="container">
+    <header class="header">
+        <div class="header_logo">STAR WARS API</div>
+
+        <div class="control-buttons">
+            <div class="control">Enter the film:</div>
+            <input class="control" type="number" id="film-number" max="1" value="2">
+            <input class="control" type="submit" id="get-info" value="Get info!">
+            <input class="control" type="submit" id="get-planets" value="Get planets">
+        </div>
+    </header>
+    <main class="main">
+        <div class="characters"></div>
+        <div class="planet planets-head visible"><span>№</span><span>Name</span><span>Population</span></div>
+
+        <div class="planetsContainer"></div>
+        <div class="planets-buttons visbut">
+            <button class="planets-prev">
+                <</button> <button class="planets-next">>
+            </button>
+        </div>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+
+</html>

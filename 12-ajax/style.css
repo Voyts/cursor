@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "STARWARS";
+    src: url("../fonts/STARWARS.wof");
+    font-weight: normal;
+    font-style: normal
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+input,
+select {
+    background-color: #ffef0a;
+    color: white;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    background: url(../img/1.jpg) no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "STARWARS";
+    color: #ffef0a;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 10px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.header_logo {
+    text-align: center;
+    font-size: 60px;
+    font-family: "STARWARS";
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.char {
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../img/2.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 15px;
+    transition: all .9s;
+    text-shadow: 0 0 20px rgba(255, 255, 255);
+    font-size: 24px;
+    padding: 10px;
+
+}
+
+
+
+.char_name {
+    margin-top: 10px;
+    font-size: 30px
+}
+
+.char_birth {
+    margin: 10px 0
+}
+
+
+.planet {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.planets-next,
+.planets-prev {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffef0a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#get-info,
+#get-planets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffef0a;
+    border: none;
+    padding: 15px 32px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.planets-head {
+    color: red;
+    margin-bottom: 20px;
+    opacity: 1
+}
+
+.planets-buttons {
+    display: inline-block;
+    float: left;
+}
+
+.visible {
+    display: none;
+}
+
+#film-number {
+    padding: 15px 32px;
+}
+
+.visbut {
+    display: none;
+}
